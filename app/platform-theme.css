@@ -1,0 +1,50 @@
+/* Extend the approved login system without changing the entry composition. */
+.platform-shell.login-shell .platform-header{background:var(--header-background);color:var(--primary);border-color:var(--divider)}
+.platform-shell.login-shell .demo-notice{background:var(--instruction-background);color:var(--login-muted);border-color:var(--divider)}
+.platform-shell.login-shell :is(.sidebar-note svg,.section-icon,.entry-icon){color:var(--login-accent)}
+.platform-shell.login-shell .entry-icon{background:var(--login-soft)}
+.platform-shell.login-shell .local-save>span{background:var(--login-accent)}
+.platform-shell.login-shell :is(.page-heading h2,.info-panel h2,.complete-panel h1,.transition-panel h1){font-size:1.5rem;line-height:1.5;font-weight:650;color:var(--login-ink)}
+.platform-shell.login-shell :is(.event-panel,.reply-panel,.state-survey-page,.info-panel,.complete-panel,.transition-panel){background:var(--login-surface);border:1px solid var(--login-line);border-radius:var(--login-radius);box-shadow:var(--login-shadow)}
+.platform-shell.login-shell :is(.info-panel,.complete-panel,.transition-panel){padding:2rem;max-width:none;margin:0}
+.platform-shell.login-shell .info-panel .muted{margin-top:1rem}
+.platform-shell.login-shell .anonymous-avatar{background:var(--login-soft);color:var(--login-accent)}
+.platform-shell.login-shell .event-body{font-size:1rem;line-height:2.05;color:var(--login-ink)}
+.platform-shell.login-shell .ai-disclosure{background:var(--instruction-background);border-color:var(--login-line);border-radius:var(--login-radius)}
+.platform-shell.login-shell .ai-toggle{min-height:50px;color:var(--login-accent);font-size:.9375rem}
+.platform-shell.login-shell .ai-toggle:hover{background:color-mix(in srgb,var(--login-soft) 75%,var(--login-line))}
+.platform-shell.login-shell .ai-card-heading{border-color:var(--login-line);color:var(--login-muted)}
+.platform-shell.login-shell .ai-card-text{color:var(--login-ink);font-size:1rem}
+.platform-shell.login-shell .task-number{background:var(--login-soft);border-color:var(--login-line);color:var(--login-accent);font-weight:500}
+.platform-shell.login-shell .reply-panel:focus-within{border-color:var(--login-accent);box-shadow:0 0 0 3px color-mix(in srgb,var(--primary) 18%,transparent)}
+.platform-shell.login-shell .reply-input:focus-visible{outline:none}
+.platform-shell.login-shell :is(.start-reply-button,.send-button,.next-button),
+.platform-shell.login-shell .transition-panel>.wide-button,
+.instruction-modal [data-slot=dialog-footer] .wide-button{height:auto!important;min-height:3.125rem!important;padding:.7rem 1rem!important;border:1px solid var(--login-accent);border-radius:var(--login-control-radius);background:var(--login-accent);color:var(--login-surface);font-size:.9375rem!important;font-weight:500;line-height:1.5;white-space:normal!important;gap:.65rem;justify-content:space-between;text-align:left}
+.platform-shell.login-shell :is(.start-reply-button,.send-button){min-width:150px}
+.platform-shell.login-shell :is(.start-reply-button,.send-button,.next-button):hover:not(:disabled),
+.platform-shell.login-shell .transition-panel>.wide-button:hover:not(:disabled),
+.instruction-modal [data-slot=dialog-footer] .wide-button:hover:not(:disabled){background:var(--primary-hover);border-color:var(--primary-hover)}
+.platform-shell.login-shell :is(.start-reply-button,.send-button,.next-button,.supporter-entry-button):disabled,
+.platform-shell.login-shell .transition-panel>.wide-button:disabled,
+.instruction-modal [data-slot=dialog-footer] .wide-button:disabled{background:var(--disabled-background);border-color:var(--disabled-background);color:var(--disabled-foreground);opacity:1}
+.platform-shell.login-shell :is(.quiet-button,.workflow-back,.back-button,.consent-back){min-height:44px;border-radius:var(--login-control-radius);color:var(--login-muted)}
+.platform-shell.login-shell :is(.quiet-button,.workflow-back,.back-button,.consent-back):hover{background:var(--login-soft);color:var(--login-ink)}
+.platform-shell.login-shell .export-actions .wide-button{min-height:50px!important;border-radius:var(--login-control-radius);font-size:.9375rem!important}
+.platform-shell.login-shell .measurement-choice:hover{border-color:var(--login-accent);background:var(--login-soft)}
+.platform-shell.login-shell button:focus-visible,.instruction-modal button:focus-visible{outline:2px solid var(--login-accent);outline-offset:3px}
+.platform-shell.login-shell .state-scale[data-pointer-focus=true] button:focus-visible{outline:none}
+[data-slot=dialog-content].instruction-modal,[data-slot=dialog-content].research-export-dialog,[data-slot=alert-dialog-content]{background:var(--login-surface);color:var(--login-ink);border:1px solid var(--login-line);border-radius:var(--login-radius);box-shadow:var(--login-shadow)}
+[data-slot=dialog-content].instruction-modal .instruction-title{font-size:1.5rem!important;font-weight:650!important;color:var(--login-ink)}
+[data-slot=dialog-content].instruction-modal :is([data-slot=dialog-description],.instruction-list p,.notice-text),[data-slot=alert-dialog-description]{color:var(--login-muted)}
+[data-slot=dialog-content].instruction-modal :is([data-slot=dialog-description],.instruction-list){font-size:1rem}
+[data-slot=dialog-content].instruction-modal .entry-icon{background:var(--login-soft);color:var(--login-accent)}
+[data-slot=alert-dialog-content] button{min-height:44px;border-radius:var(--login-control-radius)}
+@media(max-width:700px){
+ .platform-shell.login-shell :is(.info-panel,.complete-panel,.transition-panel){padding:1.5rem 1rem}
+ .platform-shell.login-shell .page-heading{flex-wrap:wrap}
+ .platform-shell.login-shell .reply-footer{flex-wrap:wrap}
+ .platform-shell.login-shell .reply-footer .send-button{margin-left:auto}
+ .platform-shell.login-shell .next-button{max-width:none;width:100%}
+ .platform-shell.login-shell .instruction-list{gap:1rem}
+}

@@ -1,0 +1,34 @@
+{
+  "version": "7",
+  "dialect": "sqlite",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "6",
+      "when": 1789107124724,
+      "tag": "0000_shallow_multiple_man",
+      "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "6",
+      "when": 1789107746992,
+      "tag": "0001_unique_winter_soldier",
+      "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "6",
+      "when": 1789109380036,
+      "tag": "0002_flimsy_amphibian",
+      "breakpoints": true
+    },
+    {
+      "idx": 3,
+      "version": "6",
+      "when": 1789933742550,
+      "tag": "0003_researcher_sessions",
+      "breakpoints": true
+    }
+  ]
+}

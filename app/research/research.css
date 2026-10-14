@@ -1,0 +1,15 @@
+.research-shell{min-height:100vh;background:var(--login-surface);color:var(--login-ink)}
+.research-shell .platform-header{display:flex;align-items:center;gap:1rem;flex-wrap:wrap}
+.research-main{max-width:1200px;margin:0 auto;padding:2rem 1.5rem;display:grid;gap:1.5rem}
+.research-main h1{font-size:1.75rem;font-weight:650}.research-main h2{font-size:1.25rem;font-weight:650}.research-main h3{font-size:1.1rem;font-weight:600;margin-top:1.5rem}
+.research-login{max-width:440px;width:100%;margin:3rem auto;padding:2rem;display:grid;gap:1rem}
+.research-login form{display:grid;gap:.75rem}.research-brand{color:var(--login-accent)}
+.research-heading,.research-actions{display:flex;align-items:center;justify-content:space-between;gap:1rem;flex-wrap:wrap}
+.research-actions{justify-content:flex-start;margin-top:1rem}.research-heading p{margin-top:.5rem}
+.research-card,.research-stats>div{border:1px solid var(--login-line);background:var(--login-surface);border-radius:var(--login-radius);padding:1.5rem;box-shadow:var(--login-shadow);min-width:0}
+.research-card>h2{margin:.75rem 0}.research-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem}.research-stats>div{display:grid;gap:.4rem}.research-stats strong{font-size:1.75rem;color:var(--login-accent)}
+.research-search{display:flex;align-items:center;gap:.75rem;flex-wrap:wrap;margin:1rem 0}.research-search input{max-width:260px}
+.research-table-wrap{overflow-x:auto}.research-main table{border-collapse:collapse;width:100%;text-align:left}.research-main th,.research-main td{padding:.8rem;border-bottom:1px solid var(--divider);white-space:nowrap}
+.research-main th{color:var(--login-muted);font-weight:500}.research-main details{border-bottom:1px solid var(--divider);padding:1rem 0}.research-main summary{cursor:pointer;font-weight:600}.research-main details p{white-space:pre-wrap;overflow-wrap:anywhere;margin:.75rem 0;line-height:1.8}.research-main details h4{font-weight:600;margin-top:1rem}
+.research-answer{padding:1rem 0;border-bottom:1px solid var(--divider)}.research-answer code{overflow-wrap:anywhere;color:var(--login-muted);font-size:.8rem}
+@media(max-width:600px){.research-main{padding:1rem}.research-card,.research-stats>div{padding:1rem}.research-stats{gap:.5rem}.research-login{margin:1rem auto}.research-actions button{white-space:normal}.research-heading{align-items:flex-start}}
